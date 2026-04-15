@@ -25,12 +25,19 @@ def get_lotr_warriors():
     rows = ["Frodo", "Sam", "Gandalf", "Aragorn", "Legolas", "Gimli", "Boromir", "Gollum", "El anillo"]
     return rows
 
+
 @app.get("/starwarsWarriors")
 def get_starwars_warriors():
     rows = ['Obiwan', 'el pelón del sable morado', 'Darth Vader', 'El de la colita de caballo', 'Yoda']
     return rows
 
+
 @app.get("/warriorsGOT")
 def get_warriors_got():
     rows = ["Jon Snow", "Daenerys Targaryen", "Arya Stark", "Tyrion Lannister", "Cersei Lannister", "Jaime Lannister", "Bran Stark", "Sansa Stark"]
+    return rows
+
+    @app.get("/cursosPlatzi")
+def get_cursos():
+    rows = ["Docker", "Bash", "Linux", "Ingles", "Python", "Java script", "DevOps", ]
     return rows
